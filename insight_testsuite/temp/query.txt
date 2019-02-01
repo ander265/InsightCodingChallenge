@@ -1,0 +1,6 @@
+SELECT drug_name, 
+COUNT(DISTINCT(CONCAT(prescriber_first_name," ",prescriber_last_name))) AS num_prescriber, 
+SUM(drug_cost) AS total_cost 
+FROM demo 
+GROUP BY drug_name 
+ORDER BY total_cost DESC, name ASC;
