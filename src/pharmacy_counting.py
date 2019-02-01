@@ -1,4 +1,5 @@
 f = open("/home/jared/insight/InsightCodingChallenge/input/itcont.txt")
+f = open("../input/itcont.txt")
 header = f.readline().strip().split(',')
 header[1:3] = [''.join(header[1:3])]
 header[1] = 'name'
@@ -34,7 +35,7 @@ drukqs = sorted(drukqs, key=lambda x: (-x[-1], x[0]))
 new_header = ['drug_name','num_prescriber','total_cost']
 drukqs.insert(0,new_header)
 
-with open('/home/jared/insight/InsightCodingChallenge/output/top_cost_drug.txt', 'w') as F:
+with open('../output/top_cost_drug.txt', 'w') as F:
     for item in drukqs:
         F.writelines(",".join(map(str,item)))
         F.write("\n")
