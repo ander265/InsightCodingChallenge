@@ -1,1 +1,3 @@
-This is the directory where your source code would reside.
+Source Code folder.
+
+Directories may need to be edited for different users. 
