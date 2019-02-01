@@ -1,4 +1,4 @@
-f = open("/home/jared/insight/InsightCodingChallenge/input/itcont.txt")
+#f = open("/home/jared/insight/InsightCodingChallenge/input/itcont.txt")
 f = open("../input/itcont.txt")
 header = f.readline().strip().split(',')
 header[1:3] = [''.join(header[1:3])]
